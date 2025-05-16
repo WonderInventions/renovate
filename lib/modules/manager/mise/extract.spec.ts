@@ -55,6 +55,7 @@ describe('modules/manager/mise/extract', () => {
       aws-cli = "2.25.10"
       aws-vault = "6.6.1"
       buf = "1.27.0"
+      ccache = "4.11.3"
       consul = "1.14.3"
       hivemind = "1.1.0"
       jq = "1.7.1"
@@ -99,6 +100,13 @@ describe('modules/manager/mise/extract', () => {
             depName: 'buf',
             extractVersion: '^v(?<version>\\S+)',
             packageName: 'bufbuild/buf',
+          },
+          {
+            currentValue: '4.11.3',
+            datasource: 'github-releases',
+            depName: 'ccache',
+            extractVersion: '^v(?<version>\\S+)',
+            packageName: 'ccache/ccache',
           },
           {
             currentValue: '1.14.3',
